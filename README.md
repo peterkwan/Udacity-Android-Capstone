@@ -30,7 +30,7 @@ You may build and install the application to your mobile device.  This project s
 For example, you may run `gradlew installRelease` in the project root directory to generate and install a release build to the connected Android device.
 
 ## Notes to the Testers
-Due to the small dataset in the server database, this application may requires an emulator to mock locations and test the shopping cart functionality. The dataset can be found [here](https://goo.gl/ibGPns).
+Due to the small dataset in the server database, this application may require an emulator to mock locations and test the shopping cart functionality. The dataset can be found [here](https://goo.gl/ibGPns).
 
 ## License
 This project does not have any license yet.  

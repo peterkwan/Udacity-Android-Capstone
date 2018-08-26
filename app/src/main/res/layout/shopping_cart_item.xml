@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_image_view"
+        android:layout_width="@dimen/store_item_imageview_width"
+        android:layout_height="@dimen/store_item_imageview_height"
+        android:layout_marginStart="@dimen/store_item_horizontal_margin"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_name_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/store_item_horizontal_margin"
+        android:layout_marginStart="@dimen/store_item_horizontal_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_image_view"
+        app:layout_constraintTop_toTopOf="@+id/item_image_view"
+        tools:text="mr.brown 3-in-1 blue mountain coffee 15g" />
+
+    <TextView
+        android:id="@+id/item_quantity_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/item_name_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        android:text="@string/quantity" />
+
+    <TextView
+        android:id="@+id/item_quantity_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/item_quantity_label_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/total_price_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        android:layout_marginStart="@dimen/store_item_horizontal_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/item_quantity_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        android:text="@string/total_price" />
+
+    <TextView
+        android:id="@+id/total_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/total_price_label_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        tools:text="$90.00" />
+
+    <TextView
+        android:id="@+id/item_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/item_name_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_quantity_view"
+        tools:text="Status: In Cart" />
+
+    <Button
+        android:id="@+id/pick_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        android:text="@string/pick_up"
+        app:layout_constraintStart_toStartOf="@+id/item_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_view" />
+
+</android.support.constraint.ConstraintLayout>

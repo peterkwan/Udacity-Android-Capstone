@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_item_height">64dp</dimen>
+    <dimen name="notification_horizontal_margin">16dp</dimen>
+    <dimen name="notification_vertical_margin">8dp</dimen>
+    <dimen name="notification_title_line_height">28dp</dimen>
+    <dimen name="notification_content_line_height">20dp</dimen>
+    <dimen name="notification_date_margin">28dp</dimen>
+
+    <dimen name="notification_detail_card_horizontal_margin">16dp</dimen>
+    <dimen name="notification_detail_card_vertical_margin">16dp</dimen>
+    <dimen name="notification_detail_card_vertical_padding">16dp</dimen>
+
+    <dimen name="wishlist_item_height">48dp</dimen>
+    <dimen name="wishlist_item_vertical_margin">12dp</dimen>
+
+    <dimen name="search_item_button_horizontal_margin">8dp</dimen>
+    <dimen name="search_item_vertical_margin">16dp</dimen>
+    <dimen name="search_item_text_horizontal_margin">16dp</dimen>
+    <dimen name="search_item_recycler_view_horizontal_margin">16dp</dimen>
+
+    <dimen name="wish_list_horizontal_margin">16dp</dimen>
+    <dimen name="wish_list_vertical_margin">16dp</dimen>
+
+    <dimen name="store_item_horizontal_margin">16dp</dimen>
+    <dimen name="store_item_vertical_margin">8dp</dimen>
+    <dimen name="store_item_imageview_width">100dp</dimen>
+    <dimen name="store_item_imageview_height">100dp</dimen>
+
+    <dimen name="shopping_cart_list_vertical_margin">16dp</dimen>
+    <dimen name="shopping_cart_list_horizontal_margin">16dp</dimen>
+
+    <dimen name="search_store_horizontal_margin">16dp</dimen>
+    <dimen name="search_store_vertical_margin">16dp</dimen>
+
+    <dimen name="store_horizontal_margin">16dp</dimen>
+    <dimen name="store_vertical_margin">16dp</dimen>
+
+    <dimen name="shopping_history_list_horizontal_margin">16dp</dimen>
+    <dimen name="shopping_history_list_vertical_margin">16dp</dimen>
+    <dimen name="shopping_history_horizontal_margin">16dp</dimen>
+    <dimen name="shopping_history_vertical_margin">16dp</dimen>
+    <dimen name="shopping_history_line_spacing">8dp</dimen>
+
+    <dimen name="main_tab_item_height">48dp</dimen>
+    <dimen name="main_tab_item_horizontal_padding">12dp</dimen>
+    <dimen name="main_tab_item_vertical_padding">20dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+
+    <dimen name="dialog_padding">8dp</dimen>
+
+</resources>

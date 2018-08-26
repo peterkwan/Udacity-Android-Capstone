@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的超市</string>
+    <string name="settings">設定</string>
+    <string name="language">語言</string>
+    <string name="lang_en_label">英文</string>
+    <string name="lang_zh_label">繁體中文</string>
+    <string name="lang_cn_label">簡體中文</string>
+    <string name="notifications">通知</string>
+    <string name="shopping_history">過往購物清單</string>
+    <string name="recent_purchase_label">「過往購物清單」中的最大項目數</string>
+    <string name="pref_recent_purchase_validation_error">請輸入 1 至 30 之間的正整數。</string>
+    <string name="add_wishlist_item">新增項目</string>
+    <string name="wishlist_item_name">項目名稱</string>
+    <string name="add">新增</string>
+    <string name="search_nearby_store">在附近分店搜尋</string>
+    <string name="search_a_store">在分店搜尋</string>
+    <string name="pick_up">提取</string>
+    <string name="put_down">放下</string>
+    <string name="district">地區</string>
+    <string name="quantity">"數量: "</string>
+    <string name="total_price">"合計: "</string>
+    <string name="opening_hour">"開放時間: "</string>
+    <string name="price">"售價: "</string>
+    <string name="shopping_cart">購物籃</string>
+    <string name="my_wishlist">我的產品列表</string>
+    <string name="enter_quantity">輸入數量</string>
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="quantity_validation_error">請輸入正整數。</string>
+    <string name="status_in_cart">在購物籃中</string>
+    <string name="status_picked_up">已選取</string>
+    <string name="checkout">結賬離開</string>
+    <string name="system_error">系統發生錯誤，請稍後再試。</string>
+    <string name="add_to_shopping_cart">加入購物籃</string>
+    <string name="show_more">顯示更多</string>
+    <string name="show_less">簡短顯示</string>
+    <string name="added_to_cart">已加入購物籃</string>
+</resources>

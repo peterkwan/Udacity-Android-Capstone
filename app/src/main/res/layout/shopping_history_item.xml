@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/shopping_history_vertical_margin">
+
+    <TextView
+        android:id="@+id/purchase_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/shopping_history_horizontal_margin"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="31 Jul 2017 13:00" />
+
+    <TextView
+        android:id="@+id/shop_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shopping_history_line_spacing"
+        style="@style/LargeTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/purchase_date_view"
+        app:layout_constraintTop_toBottomOf="@+id/purchase_date_view"
+        tools:text="Leung King Superstore" />
+
+    <TextView
+        android:id="@+id/total_price_view"
+        style="@style/LargeTextStyle"
+        android:textColor="@color/purple_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/shopping_history_horizontal_margin"
+        app:layout_constraintEnd_toStartOf="@+id/more_less_button"
+        app:layout_constraintTop_toTopOf="@+id/shop_name_view"
+        tools:text="$40.00" />
+
+    <ImageView
+        android:id="@+id/more_less_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/shopping_history_horizontal_margin"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shop_name_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopping_history_item_detail_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/shopping_history_vertical_margin"
+        android:layout_marginEnd="@dimen/shopping_history_horizontal_margin"
+        android:layout_marginStart="@dimen/shopping_history_horizontal_margin"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_name_view" />
+
+
+</android.support.constraint.ConstraintLayout>

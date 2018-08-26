@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/store_item_horizontal_margin"
+    android:layout_marginStart="@dimen/store_item_horizontal_margin">
+
+    <TextView
+        android:id="@+id/item_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/LargeTextStyle"
+        tools:text="mr.brown 3-in-1 blue mountain coffee 15g" />
+
+    <TextView
+        android:id="@+id/item_quantity_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NormalTextStyle"
+        android:text="@string/quantity"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        android:layout_below="@+id/item_name_view"/>
+
+    <TextView
+        android:id="@+id/item_quantity_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        android:layout_toEndOf="@+id/item_quantity_label_view"
+        android:layout_below="@+id/item_name_view"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/total_price_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        android:layout_marginStart="@dimen/store_item_horizontal_margin"
+        style="@style/NormalTextStyle"
+        android:layout_toEndOf="@+id/item_quantity_view"
+        android:layout_below="@+id/item_name_view"
+        android:text="@string/total_price" />
+
+    <TextView
+        android:id="@+id/total_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_item_vertical_margin"
+        style="@style/NormalTextStyle"
+        android:layout_toEndOf="@+id/total_price_label_view"
+        android:layout_below="@+id/item_name_view"
+        tools:text="$90.00" />
+
+</RelativeLayout>

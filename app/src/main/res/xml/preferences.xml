@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/lang_en_value"
+        android:entries="@array/pref_lang_options_label"
+        android:entryValues="@array/pref_lang_options_value"
+        android:key="@string/pref_lang_key"
+        android:title="@string/language" />
+
+    <EditTextPreference
+        android:key="@string/pref_recent_purchase_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/recent_purchase_label" />
+
+</PreferenceScreen>

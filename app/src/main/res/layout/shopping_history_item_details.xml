@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+    android:layout_marginBottom="@dimen/shopping_history_vertical_margin">
+
+    <TextView
+        android:id="@+id/item_name_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/NormalTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="mr.brown 3-in-1 blue mountain coffee 15g" />
+
+    <TextView
+        android:id="@+id/item_quantity_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/item_name_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        android:text="@string/quantity" />
+
+    <TextView
+        android:id="@+id/item_quantity_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/item_quantity_label_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/price_label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        android:layout_marginStart="@dimen/shopping_history_horizontal_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/item_quantity_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shopping_history_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toEndOf="@+id/price_label_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view"
+        tools:text="$90.00" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShoppingCartFragment">
+
+    <TextView
+        android:id="@+id/shop_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/shopping_cart_list_vertical_margin"
+        android:layout_marginTop="@dimen/shopping_cart_list_vertical_margin"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/shopping_cart_list_vertical_margin"
+        android:layout_marginTop="@dimen/shopping_cart_list_vertical_margin"
+        android:layout_marginEnd="@dimen/shopping_cart_list_horizontal_margin"
+        android:layout_marginStart="@dimen/shopping_cart_list_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/shop_name_view"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_button">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopping_cart_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

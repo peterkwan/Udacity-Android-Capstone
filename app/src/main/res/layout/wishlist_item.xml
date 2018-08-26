@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wishlist_item_view"
+    android:layout_width="match_parent"
+    style="@style/NormalTextStyle"
+    android:layout_height="@dimen/wishlist_item_height"
+    android:paddingTop="@dimen/wishlist_item_vertical_margin"
+    android:paddingStart="@dimen/notification_horizontal_margin"
+    android:paddingBottom="@dimen/wishlist_item_vertical_margin"
+    android:paddingEnd="@dimen/notification_horizontal_margin" >
+
+
+</TextView>

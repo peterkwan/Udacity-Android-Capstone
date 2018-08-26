@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "31746744429",
+    "firebase_url": "https://my-supermarket-49fe8.firebaseio.com",
+    "project_id": "my-supermarket-49fe8",
+    "storage_bucket": "my-supermarket-49fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31746744429:android:7cd159c1e633e46d",
+        "android_client_info": {
+          "package_name": "org.peterkwan.udacity.mysupermarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31746744429-dt8mlmfv0hmj57v93catp5u1kjov7s4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.peterkwan.udacity.mysupermarket",
+            "certificate_hash": "483d8fa796fb71aa911aac7757f3a7fbc4095ab6"
+          }
+        },
+        {
+          "client_id": "31746744429-bqf4nemj23ngu0pg4r3o1h1reodced7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7kFZ31stmVE_ed_jcREsowZmF_A34g5Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31746744429-bqf4nemj23ngu0pg4r3o1h1reodced7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31746744429:android:a25795e03309363a",
+        "android_client_info": {
+          "package_name": "org.peterkwan.udacity.mysupermarket.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31746744429-453po8gmnaaha9nnsaqib9ln1kvbtscs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.peterkwan.udacity.mysupermarket.admin",
+            "certificate_hash": "483d8fa796fb71aa911aac7757f3a7fbc4095ab6"
+          }
+        },
+        {
+          "client_id": "31746744429-bqf4nemj23ngu0pg4r3o1h1reodced7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7kFZ31stmVE_ed_jcREsowZmF_A34g5Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31746744429-bqf4nemj23ngu0pg4r3o1h1reodced7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

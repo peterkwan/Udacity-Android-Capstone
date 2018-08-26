@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SearchStoreFragment">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <TextView
+        android:id="@+id/district_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_store_horizontal_margin"
+        android:layout_marginTop="@dimen/search_store_vertical_margin"
+        android:text="@string/district"
+        style="@style/NormalTextStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/district_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_store_vertical_margin"
+        app:layout_constraintStart_toStartOf="@+id/district_view"
+        app:layout_constraintTop_toTopOf="@+id/district_view" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/store_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/search_store_horizontal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/district_spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"/>
+
+    <RelativeLayout
+        android:id="@+id/store_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/search_store_vertical_margin"
+        android:layout_marginTop="@dimen/search_store_vertical_margin"
+        android:layout_marginStart="@dimen/search_store_horizontal_margin"
+        android:layout_marginEnd="@dimen/search_store_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/store_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

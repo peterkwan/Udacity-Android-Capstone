@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SearchItemFragment">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <EditText
+        android:id="@+id/search_item_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/search_item_text_horizontal_margin"
+        android:layout_marginStart="@dimen/search_item_text_horizontal_margin"
+        android:layout_marginTop="@dimen/search_item_vertical_margin"
+        android:ems="10"
+        android:inputType="text"
+        android:enabled="false"
+        android:hint="@string/wishlist_item_name"
+        style="@style/NormalTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search_nearby_store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/search_item_button_horizontal_margin"
+        android:layout_marginTop="@dimen/search_item_vertical_margin"
+        android:text="@string/search_nearby_store"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/search_item_textview" />
+
+    <Button
+        android:id="@+id/search_store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_item_button_horizontal_margin"
+        android:layout_marginTop="@dimen/search_item_vertical_margin"
+        android:text="@string/search_a_store"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/search_item_textview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/store_item_vertical_margin"
+        android:layout_marginEnd="@dimen/search_item_recycler_view_horizontal_margin"
+        android:layout_marginStart="@dimen/search_item_recycler_view_horizontal_margin"
+        android:layout_marginTop="@dimen/search_item_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_nearby_store_button">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_item_result_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:scrollbars="vertical"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

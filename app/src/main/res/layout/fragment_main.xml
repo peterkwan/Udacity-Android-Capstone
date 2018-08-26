@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mainTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_tab_item_height"
+            android:paddingStart="@dimen/main_tab_item_horizontal_padding"
+            android:paddingEnd="@dimen/main_tab_item_horizontal_padding"
+            android:paddingTop="@dimen/main_tab_item_vertical_padding"
+            android:paddingBottom="@dimen/main_tab_item_vertical_padding"
+            android:text="@string/my_wishlist" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_tab_item_height"
+            android:paddingStart="@dimen/main_tab_item_horizontal_padding"
+            android:paddingEnd="@dimen/main_tab_item_horizontal_padding"
+            android:paddingTop="@dimen/main_tab_item_vertical_padding"
+            android:paddingBottom="@dimen/main_tab_item_vertical_padding"
+            android:text="@string/shopping_cart" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainTabLayout" />
+
+</RelativeLayout>

@@ -47,7 +47,8 @@
         android:src="@drawable/ic_arrow_drop_down_black_24dp"
         app:layout_constraintBottom_toBottomOf="@+id/shop_name_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/shopping_history_item_detail_list_view"

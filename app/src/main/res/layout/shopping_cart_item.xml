@@ -13,7 +13,8 @@
         android:layout_marginStart="@dimen/store_item_horizontal_margin"
         android:layout_marginTop="@dimen/store_item_vertical_margin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
 
     <TextView
         android:id="@+id/item_name_view"

@@ -3,6 +3,7 @@ package org.peterkwan.udacity.mysupermarket.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import org.peterkwan.udacity.mysupermarket.R;
 
 import butterknife.BindBool;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static org.peterkwan.udacity.mysupermarket.util.AppConstants.ADD_WISHLIST_ITEM_ACTION;
@@ -28,13 +30,18 @@ public class MainActivity extends BaseActivity {
     @BindBool(R.bool.two_pane_layout)
     boolean isTwoPaneLayout;
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle(R.string.app_name);
 
         ButterKnife.bind(this);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.app_name);
 
         if (!isTwoPaneLayout && savedInstanceState == null)
             replaceFragment(R.id.mainFragment, new MainFragment());

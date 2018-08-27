@@ -2,31 +2,35 @@ package org.peterkwan.udacity.mysupermarket.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.View;
+import android.support.v7.widget.Toolbar;
 
 import org.peterkwan.udacity.mysupermarket.R;
 
 import butterknife.BindBool;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 import static org.peterkwan.udacity.mysupermarket.util.AppConstants.NOTIFICATION_ID;
 import static org.peterkwan.udacity.mysupermarket.util.AppConstants.VIEW_NOTIFICATION_ACTION;
 
 public class NotificationActivity extends BaseActivity {
 
-    @Nullable
-    @BindView(R.id.notificationDetailFragment)
-    View detailFragment;
-
     @BindBool(R.bool.two_pane_layout)
     boolean isTwoPaneLayout;
+
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
-        setTitle(R.string.notifications);
+
+        ButterKnife.bind(this);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.notifications);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

@@ -2,8 +2,12 @@ package org.peterkwan.udacity.mysupermarket.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 import org.peterkwan.udacity.mysupermarket.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 import static org.peterkwan.udacity.mysupermarket.util.AppConstants.DEFAULT_NOTIFICATION_ID;
 import static org.peterkwan.udacity.mysupermarket.util.AppConstants.NOTIFICATION_ID;
@@ -11,6 +15,9 @@ import static org.peterkwan.udacity.mysupermarket.util.AppConstants.NOTIFICATION
 public class NotificationDetailActivity extends BaseActivity {
 
     private int notificationId;
+
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +28,12 @@ public class NotificationDetailActivity extends BaseActivity {
             notificationId = intent.getIntExtra(NOTIFICATION_ID, DEFAULT_NOTIFICATION_ID);
 
         setContentView(R.layout.activity_notification_detail);
-        setTitle(getString(R.string.notifications));
+
+        ButterKnife.bind(this);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getString(R.string.notifications));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState == null)
             initDetailFragment();
